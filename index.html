@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sefa Berber | Geliştirici</title>
+  <title>Sefa Berber | Developer</title>
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
@@ -27,6 +27,24 @@
     .section {
       margin-bottom: 50px;
     }
+    .profile {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .profile img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #0066cc;
+    }
+    .skills-group {
+      margin-bottom: 30px;
+    }
+    .skills-group h3 {
+      margin-bottom: 10px;
+      font-size: 1.3em;
+    }
     ul.skills {
       list-style: none;
       padding: 0;
@@ -36,9 +54,10 @@
     }
     ul.skills li {
       background: #f0f0f0;
-      padding: 8px 16px;
-      border-radius: 20px;
-      font-size: 0.95em;
+      padding: 10px 18px;
+      border-radius: 24px;
+      font-size: 1em;
+      font-weight: 500;
     }
     .project {
       margin-bottom: 30px;
@@ -55,54 +74,72 @@
 </head>
 <body>
 
-  <div class="section">
+  <div class="section profile">
+    <img src="profile.jpg" alt="Sefa Berber">
     <h1>Sefa Berber</h1>
-    <h2>Geliştirici</h2>
-    <p>Yapay zeka, makine öğrenmesi uygulamaları, akıllı sistemler ve tam yığın çözümler geliştirmeye tutkulu bir geliştiriciyim. Veri işleme, model eğitimi, örüntü tanıma ve pratik yapay zeka projeleri konusunda deneyim sahibiyim.</p>
+    <h2>Developer</h2>
+    <p>Passionate about building intelligent systems, machine learning applications, AI-powered tools, game development, and full-stack solutions. Experienced in data processing, model training, pattern recognition, and practical AI/game projects.</p>
   </div>
 
   <div class="section">
-    <h2>Teknik Yetkinlikler</h2>
-    <ul class="skills">
-      <li>Python</li>
-      <li>Makine Öğrenmesi</li>
-      <li>Derin Öğrenme</li>
-      <li>Scikit-learn</li>
-      <li>TensorFlow / PyTorch</li>
-      <li>Veri Analizi</li>
-      <li>Git & GitHub</li>
-      <li>HTML / CSS / JavaScript</li>
-      <!-- İstediğin becerileri ekle/çıkar -->
-    </ul>
+    <h2>Technical Skills</h2>
+    
+    <div class="skills-group">
+      <h3>Programming Languages</h3>
+      <ul class="skills">
+        <li>C</li>
+        <li>C++</li>
+        <li>C#</li>
+        <li>Java</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>HTML</li>
+        <li>CSS</li>
+      </ul>
+    </div>
+    
+    <div class="skills-group">
+      <h3>Game Development</h3>
+      <ul class="skills">
+        <li>Unity</li>
+        <li>Unreal Engine</li>
+      </ul>
+    </div>
+    
+    <div class="skills-group">
+      <h3>Tools & Technologies</h3>
+      <ul class="skills">
+        <li>Linux</li>
+        <li>Photoshop</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </div>
   </div>
 
   <div class="section">
-    <h2>Projeler</h2>
+    <h2>Projects</h2>
     
     <div class="project">
-      <h3>Sahte Haber Tespit Projesi</h3>
-      <p>Haber metinlerini gerçek/sahte olarak sınıflandırmak için uçtan uca bir makine öğrenmesi projesi. Doğal dil işleme teknikleri, özellik mühendisliği ve çeşitli sınıflandırma modelleri (Lojistik Regresyon, SVM, Naive Bayes, ensemble yöntemler vb.) kullanıldı.</p>
-      <p><strong>Kullanılan Teknolojiler:</strong> Python, scikit-learn, pandas, NLTK/TF-IDF, model değerlendirme metrikleri.</p>
-      <p><a href="https://github.com/beratfoglu/Fake-News-Detection-Project" target="_blank">GitHub'da Görüntüle →</a></p>
+      <h3>Fake News Detection Project</h3>
+      <p>An end-to-end machine learning project for classifying news articles as real or fake using natural language processing, feature engineering, and various classifiers (Logistic Regression, SVM, Naive Bayes, ensembles).</p>
+      <p><strong>Technologies:</strong> Python, scikit-learn, pandas, NLTK/TF-IDF, evaluation metrics.</p>
+      <p><a href="https://github.com/beratfoglu/Fake-News-Detection-Project" target="_blank">View on GitHub →</a></p>
     </div>
     
     <div class="project">
-      <h3>Yapay Zeka Destekli Cilt Kanseri Tespit Sistemi</h3>
-      <p>Örüntü Tanıma dersi projesi: Dermoskopik görüntülerden cilt kanseri tespiti yapan bir yapay zeka sistemi. İleride mobil uygulamaya entegre edilmesi hedefleniyor.</p>
-      <p><strong>Kullanılan Teknolojiler:</strong> Python, derin öğrenme (muhtemelen CNN), görüntü işleme, bilgisayarlı görü kütüphaneleri (OpenCV, TensorFlow/Keras veya PyTorch), model eğitimi ve değerlendirme.</p>
-      <p><a href="https://github.com/altankocdev/skin-cancer-detection" target="_blank">GitHub'da Görüntüle →</a></p>
+      <h3>AI-Powered Skin Cancer Detection System</h3>
+      <p>Pattern Recognition course project: An AI system for detecting skin cancer from dermoscopic images, designed for future mobile app integration.</p>
+      <p><strong>Technologies:</strong> Python, deep learning (CNNs), image processing, OpenCV, TensorFlow/Keras or PyTorch.</p>
+      <p><a href="https://github.com/altankocdev/skin-cancer-detection" target="_blank">View on GitHub →</a></p>
     </div>
-
-    <!-- Daha fazla proje eklemek istersen aynı blok yapısını kopyala -->
   </div>
 
   <div class="section">
-    <h2>İletişim</h2>
+    <h2>Contact</h2>
     <p><span class="emoji">📧</span> <a href="mailto:sefa.berber2@gmail.com">sefa.berber2@gmail.com</a></p>
-    <p><span class="emoji">📞</span> <a href="tel:+905331918053">0533 191 80 53</a></p>
+    <p><span class="emoji">📞</span> <a href="tel:+905331918053">+90 533 191 80 53</a></p>
     <p><span class="emoji">🐱</span> <a href="https://github.com/sefaberber" target="_blank">github.com/sefaberber</a></p>
-    <p><span class="emoji">📍</span> İstanbul, Türkiye</p>
-    <!-- LinkedIn, Twitter/X vs. ekleyebilirsin -->
+    <p><span class="emoji">📍</span> İstanbul, Turkey</p>
   </div>
 
 </body>
